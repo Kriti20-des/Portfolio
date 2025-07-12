@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Kriti Kumari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0e0e0e;
+      color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .typing {
+      display: inline-block;
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(40, end), blink 0.8s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+    .about-section {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      background-color: #1f1f1f;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    .timeline {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding-left: 1rem;
+      border-left: 3px solid #f37055;
+    }
+    .timeline-event {
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .timeline-event::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -9px;
+      width: 15px;
+      height: 15px;
+      background: #f37055;
+      border-radius: 50%;
+    }
+    .internships {
+      max-width: 800px;
+      margin: 3rem auto;
+      text-align: center;
+    }
+    .internships h2 {
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #f79533, #a166ab);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .internship-logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .internship-logos img {
+      width: 120px;
+      height: auto;
+      filter: grayscale(100%);
+      transition: filter 0.3s, transform 0.3s;
+    }
+    .internship-logos img:hover {
+      filter: none;
+      transform: scale(1.1);
+    }
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 3rem auto 0;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      background-color: #1f1f1f;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 25px;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background 0.3s;
+    }
+    .back-button:hover {
+      transform: translateY(-3px);
+      background-color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      color: #888;
+      font-size: 0.9rem;
+      background-color: #0e0e0e;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1><span class="typing">Hi, I'm Kriti Kumari</span></h1>
+
+    <div class="about-section">
+      <p>
+        I'm Kriti Kumari — a passionate and curious tech explorer currently in my 3rd year of BTech in Computer Science and Engineering. I love learning by building, and my journey started with mini web projects like Amazon clones, calculators, and image galleries. 
+      </p>
+      <p>
+        I’m currently diving deeper into the world of Artificial Intelligence and Machine Learning through two active internships — including one under AICTE. My focus has shifted from full-stack to intelligent systems, and I enjoy turning data into smart, functional applications.
+      </p>
+      <p>
+        My vision is to contribute to ethical, scalable AI that solves real problems. Every day, I strive to expand my skills, learn from hands-on experience, and grow as a developer with purpose.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-event">
+        <strong>2023</strong> - Started BTech in CSE and explored basic web development.
+      </div>
+      <div class="timeline-event">
+        <strong>2024</strong> - Built mini projects (Amazon clone, calculator, gallery).
+      </div>
+      <div class="timeline-event">
+        <strong>2025</strong> - Transitioned to AI/ML and began internships.
+      </div>
+      <div class="timeline-event">
+        <strong>2026</strong> - Deepening AI/ML skills and preparing for industry roles.
+      </div>
+    </div>
+
+    <div class="internships">
+      <h2>Internships</h2>
+      <div class="internship-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/AICTE_India_Logo.png" alt="AICTE" title="AICTE Internship">
+      </div>
+    </div>
+
+    <a class="back-button" href="index.html">← Back to Home</a>
+  </main>
+
+  <footer>
+    &copy; 2025 Kriti Kumari. All rights reserved.
+  </footer>
+</body>
+</html>
